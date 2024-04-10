@@ -98,7 +98,7 @@ class Layout {
 		// Footnotes may change the bounds.
 		bounds = this.element.getBoundingClientRect();
 
-		let newBreakToken = this.findBreakToken(wrapper, source, bounds, prevBreakToken, start);
+		let newBreakToken;
 
 		if (prevBreakToken.isFinished()) {
 			if (newBreakToken) {
